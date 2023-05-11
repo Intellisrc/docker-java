@@ -7,8 +7,7 @@ RUN { \
 RUN apk update && \
     apk add bash tzdata gzip && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
-    echo "Asia/Tokyo" > /etc/timezone && \
-    apk del tzdata
+    echo "Asia/Tokyo" > /etc/timezone 
 
 # --------------- SYSTEM ------------------
 WORKDIR /var/java
