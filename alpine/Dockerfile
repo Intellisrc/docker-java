@@ -28,6 +28,7 @@ RUN echo "alias l='ls -lh'" >> /root/.bashrc && \
     echo "alias vim='vi'" >> /root/.bashrc
 
 COPY logrotate.conf /etc/logrotate.d/java
+RUN chmod 644 /etc/logrotate.d/java
 
 # --------------- SYSTEM ------------------
 WORKDIR /var/java
