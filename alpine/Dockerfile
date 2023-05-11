@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk11:jre-11.0.11_9-alpine
 
 ENV TZ="Asia/Tokyo"
-ENV ALPINE="3.14"
+ENV ALPINE="v3.14"
 ENV CUSTOM_REP="http://ftp.tsukuba.wide.ad.jp/Linux/alpine"
 # -------------- OS -----------------------
 RUN { \
