@@ -1,6 +1,6 @@
 FROM intellisrc/alpine:3.21
 
-ENV JAVA_VER=21
+ENV JAVA_VER=11
 # -------------- OS -----------------------
 COPY inputrc.patch /etc/inputrc.patch
 
